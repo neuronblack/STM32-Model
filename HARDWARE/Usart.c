@@ -53,5 +53,5 @@ void usart_init(u32 pclk2,u32 bound)
  	USART2->BRR=mantissa; 
 	USART2->CR1|=0X200C;  
 	USART2->CR1|=1<<5;    	    	
-	MY_NVIC_Init(3,3,USART1_IRQn,2);
+	MY_NVIC_Init(3,3,USART2_IRQn,2);
 }
